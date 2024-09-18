@@ -1,0 +1,45 @@
+// eslint-disable-next-line no-unused-vars
+import React from 'react'
+import exit from "../assets/exit.svg"
+
+// eslint-disable-next-line react/prop-types
+function ModalCode({secondCloseClick}) {
+  return (
+    <div className='modal_overlay'>
+            <div className='modal  flex items-center flex-col p- w-432 h-336 bg-gray-800 rounded-xl' action="">
+                <div className='w-full flex items-center justify-end p-2'>
+                    <button onClick={secondCloseClick}>
+                        <img src={exit} alt="" />
+                    </button>
+                </div>
+
+                <form className='w-[320px] h-[224px] flex flex-col items-center justify-center' action="">
+                    <div className='w-full h-full'>
+                        <div className='w-full flex flex-col items-center gap-y-2'>
+                            <h1 className='text-24 text-text_b font-semibold '>Введите номер телефона</h1>
+                            <h2 className=' text-16'>
+                                Отправим смс с кодом подтверждения
+                            </h2>
+                        </div>
+                    </div>
+                    <div className='w-full h-full flex flex-col gap-y-1'>
+                        <span className=' text-14'>Номер телефона</span>
+                        <div className='flex flex-col gap-y-3'>
+
+                            <input className='w-full h-48 text-14 rounded-lg bg-reg_bg text-text_b outline-none px-3' type="text" />
+                            <button className='w-full h-48 text-16 font-medium rounded-lg text-text_b outline-none px-3 bg-reg_blue text-white' type="text" placeholder='+998'>
+                                Получить код
+                            </button>
+                        </div>
+
+                    </div>
+    
+                </form>
+
+            </div>
+
+        </div>
+  )
+}
+
+export default ModalCode
