@@ -87,6 +87,7 @@ function ModalCode({ secondCloseClick }) {
                                 type='text'
                                 maxLength='1'
                                 value={digit}
+                                required
                                 onChange={e => handleChange(e, index)}
                                 onKeyDown={e => handleKeyDown(e, index)}
                                 style={styles.input}

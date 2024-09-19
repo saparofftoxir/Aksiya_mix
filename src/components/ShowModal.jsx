@@ -32,6 +32,7 @@ function ShowModal({ handleCloseModal,showSecondModal }) {
                                 className='w-full h-42 text-14 rounded-lg bg-reg_bg text-text_b outline-none px-3'
                                 type="tel"
                                 value={tel}
+                                required
                             />
 
                             <button onClick={showSecondModal}  className='w-full h-42 text-16 font-medium rounded-lg text-text_b outline-none px-3 bg-reg_blue text-white' type="text" placeholder='+998'>
