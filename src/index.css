@@ -34,4 +34,9 @@
     position: absolute;
     top: 10px;
     right: 10px;
+    background-color: rgba(241, 245, 249, 1);
+    
+    /* text-decoration: underline; */
+   
+    
   }

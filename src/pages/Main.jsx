@@ -7,22 +7,15 @@ import l_strel from "../assets/l_strel.svg"
 import r_strel from "../assets/r_strel.svg"
 import ShowModal from '../components/ShowModal'
 import Navbar from '../components/Navbar'
-
+import Corusel from '../components/Corusel'
+import ModalCode from '../components/ModalCode'
 function Main() {
   return (
-    <main className='w-full h-screen bg-cyan-500 flex flex-col items-center justify-center mt-'>
-      {/* <div className='w-full h-20 bg-red-700'>
-      </div> */}
-      <div className='w-[80%] h-full bg-slate-700 flex  items-center justify-center'>
-
-      </div>
-      {/* <div className='w-full flex justify-between rounded-lg gap-x-6'>
-        <div className="relative">
-          <img className="rounded-lg" src={banner} alt="" />
-          <div className="absolute inset-0 flex items-start top-44 justify-between">
-            <img className="left-4 cursor-pointer" src={l_strel} alt="Left Arrow" />
-            <img className="right-4 cursor-pointer" src={r_strel} alt="Right Arrow" />
-          </div>
+    <main className='w-full h-screen flex flex-col '>
+      
+      <div className='w-full  flex justify-between rounded-lg gap-x-5'>
+        <div className='w-710 h-full'>
+          <Corusel/>
         </div>
 
         <div className='flex flex-col justify-between'>
@@ -36,8 +29,12 @@ function Main() {
         </div>
 
       </div>
-      <section className='w-full h-screen'>
-      </section> */}
+      
+      <div>
+
+      </div>
+      
+
     </main>
   )
 }
